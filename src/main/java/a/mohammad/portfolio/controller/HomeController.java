@@ -25,6 +25,7 @@ public class HomeController {
     @GetMapping("/contact")
     public String showContactPage(Model model) {
         model.addAttribute("title", "Contact");
+        model.addAttribute("content", "Contact");
         return "master";
 
     }
